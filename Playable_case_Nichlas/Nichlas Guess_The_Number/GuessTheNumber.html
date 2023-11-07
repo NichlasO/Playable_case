@@ -1,0 +1,38 @@
+<html>  
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Guess the Number</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="well lead">Guess the computer generated random number between 1 and 1000.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form method="post" id="submitNumber">
+                    <div class="form-group">
+                        <label of="number">Your Guess:&nbsp;</label>
+                        <input id="inputNumber" name="number" type="number"/>
+                        <button type="submit" class="btn btn-primary btn-sm">Verify</button>
+                        <button id="restart" name="restart" class="btn btn-warning btn-sm">Restart</button>
+                    </div>
+                </form>
+                <p class="text-info">No of guesses : <span class="badge"></span><p></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GuessTheNumber.js"></script>
+</body>
+
+</html>

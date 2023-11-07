@@ -1,0 +1,88 @@
+<html>  
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="GuessTheNumber.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12" id="title">
+            <h2>Guess the Number</h2>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="welcome-container" class="fade-in">
+            <div>
+                Welcome to "Guess the Number" <br/>
+
+                Are you up for a thrilling challenge? Test your wits and intuition in our exciting game, "Guess the Number." <br/> 
+                Here's how it works: <br/><br/>
+
+                Rules:<br/><br/>
+
+                1. We'll pick a secret number from a specific range. <br/>
+                2. Your mission is to guess the correct number. <br/>
+                3. Type in your guesses in the provided input field. <br/>
+                4. After each guess, we'll give you clues to help you figure out if the secret number is higher or lower. <br/>
+                5. Keep guessing until you uncover the secret number or decide to call it a day. <br/>
+                6. Enjoy the suspense and see how fast you can crack the code! <br/>
+                7. Good luck and have a fantastic time playing "Guess the Number"! <br/>
+            </div>
+
+            <button id="begin" class="btn">Begin</button>
+        </div>
+
+        <div id="options-container" class="nonVisible fade-in">
+            <div class="row options" >
+                <div class="col-md-3 difficulties btn" id="easy">
+                    <div>
+                        <h3>Easy</h3>
+                        <p>1-10</p>
+                    </div>
+                </div>
+                <div class="col-md-3 difficulties btn" id="medium">
+                    <div>
+                        <h3>Medium</h3>
+                        <p>1-100</p>
+                    </div>
+                </div>
+                <div class="col-md-3 difficulties btn" id="hard">
+                    <div>
+                        <h3>Hard</h3>
+                        <p>1-1000</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <div id="game-container" class="nonVisible fade-in">
+            <div class="row">
+                <div class="col-12">
+                    <p id="info-box" class="well lead">Guess the computer generated random number between 1 and 1000.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form method="post" id="submit-number">
+                        <div class="form-group">
+                            <label of="number">Your Guess:&nbsp;</label>
+                            <input id="input-number" name="number" type="number"/>
+                            <button type="submit" class="btn btn-success btn-sm">Verify</button>
+                            <button id="restart" name="restart" class="btn btn-warning btn-sm">Restart</button>
+                            <button id="select-new-mode" name="new-mode" class="btn btn-primary btn-sm">Select new game mode</button>
+                        </div>
+                    </form>
+                    <p class="text-info">No of guesses : <span class="badge"></span><p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="GuessTheNumber.js"></script>
+</body>
+
+</html>
